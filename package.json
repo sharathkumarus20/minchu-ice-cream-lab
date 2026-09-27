@@ -1,0 +1,18 @@
+{
+  "name": "minchu-ice-cream-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.10"
+  },
+  "scripts": {
+    "start": "node server/server.mjs",
+    "dev": "node --watch server/server.mjs",
+    "build": "node scripts/build.mjs",
+    "hash-password": "node scripts/hash-password.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.117.2"
+  }
+}
