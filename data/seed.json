@@ -1,0 +1,266 @@
+{
+  "settings": {
+    "general": {
+      "brandName": "ಮಿಂಚು's Ice Cream Lab",
+      "chefName": "ಮಿಂಚು",
+      "siteTitle": "{brandName} | Handmade ice cream",
+      "siteDescription": "Handmade ice cream by {chefName}. See the flavours and prices, then order by phone or WhatsApp.",
+      "currency": "₹"
+    },
+    "hero": {
+      "title": "Hi, I'm your Chief.",
+      "subtitle": "My name is {chefName}.",
+      "description": "Handmade ice cream in flavours that feel like home. Pick your favourites, then order by phone or WhatsApp.",
+      "image": "",
+      "imageAlt": ""
+    },
+    "about": {
+      "title": "Ice cream that remembers.",
+      "body": "Smriti means memory, and that is what every scoop is made to bring back: the first mango of summer, the kulfi at a family wedding, the chocolate you shared on the way home.\n\nEverything here is made by hand, one flavour at a time. Order what you love, and let {brandName} turn it into your next good memory."
+    },
+    "why": {
+      "title": "Why people order from {brandName}",
+      "items": [
+        {
+          "title": "Made by hand",
+          "text": "Every flavour is made by hand, with the care of a home kitchen."
+        },
+        {
+          "title": "Flavours you remember",
+          "text": "Mango, kesar, rose and other tastes that feel like home."
+        },
+        {
+          "title": "Clear prices",
+          "text": "Every price is on the menu, so you know what you pay before you order."
+        },
+        {
+          "title": "Order in a minute",
+          "text": "Send a WhatsApp message or make a call. No app and no sign-up."
+        }
+      ]
+    },
+    "order": {
+      "steps": [
+        {
+          "title": "Pick your flavours",
+          "text": "Browse the menu and tap Order on the ones you want."
+        },
+        {
+          "title": "Message or call",
+          "text": "Your choice is filled in for you on WhatsApp. Or just phone."
+        },
+        {
+          "title": "Confirm and enjoy",
+          "text": "{chefName} confirms the details with you directly."
+        }
+      ]
+    },
+    "sections": {
+      "featuredTitle": "Featured flavours",
+      "featuredSubtitle": "The ones people ask for first.",
+      "menuTitle": "The full menu",
+      "menuSubtitle": "Every flavour with its price. Tap Order to get started.",
+      "memoriesTitle": "Memories",
+      "memoriesSubtitle": "Moments from the {brandName} kitchen and the people we made them for.",
+      "orderTitle": "Ready to order?",
+      "orderSubtitle": "Choose how you want to reach {chefName}.",
+      "contactTitle": "Say hello",
+      "contactSubtitle": "Questions, flavour ideas or a bigger order? Get in touch."
+    },
+    "footer": {
+      "tagline": "Handmade ice cream, made to be remembered.",
+      "note": "Made with love."
+    },
+    "contact": {
+      "phone": "+91 90000 00000",
+      "whatsapp": "91 90000 00000",
+      "whatsappMessage": "Hi {chefName}! I'd like to order ice cream from {brandName}.",
+      "email": "",
+      "address": "",
+      "mapUrl": "",
+      "hours": ""
+    },
+    "social": {
+      "instagram": "",
+      "facebook": "",
+      "youtube": "",
+      "others": []
+    }
+  },
+  "products": [
+    {
+      "id": "p-mango",
+      "name": "Mango Malai",
+      "description": "Ripe mango folded into slow-churned cream.",
+      "category": "Fruit",
+      "image": "/assets/products/mango-malai.svg",
+      "available": true,
+      "featured": true,
+      "order": 1,
+      "pricePerUnit": 36,
+      "variants": [
+        "250ml",
+        "500ml",
+        "1l"
+      ]
+    },
+    {
+      "id": "p-kesar",
+      "name": "Kesar Pista",
+      "description": "Saffron and pistachio, the classic kulfi flavour.",
+      "category": "Indian classics",
+      "image": "/assets/products/kesar-pista.svg",
+      "available": true,
+      "featured": true,
+      "order": 2,
+      "pricePerUnit": 48,
+      "variants": [
+        "250ml",
+        "500ml",
+        "1l"
+      ]
+    },
+    {
+      "id": "p-choc",
+      "name": "Belgian Chocolate",
+      "description": "Deep, dark and very chocolatey.",
+      "category": "Rich and creamy",
+      "image": "/assets/products/belgian-chocolate.svg",
+      "available": true,
+      "featured": true,
+      "order": 3,
+      "pricePerUnit": 44,
+      "variants": [
+        "250ml",
+        "500ml",
+        "1l"
+      ]
+    },
+    {
+      "id": "p-rose",
+      "name": "Rose Gulkand",
+      "description": "Rose petal jam swirled into soft rose cream.",
+      "category": "Indian classics",
+      "image": "/assets/products/rose-gulkand.svg",
+      "available": true,
+      "featured": true,
+      "order": 4,
+      "pricePerUnit": 40,
+      "variants": [
+        "250ml",
+        "500ml",
+        "1l"
+      ]
+    },
+    {
+      "id": "p-straw",
+      "name": "Strawberry Swirl",
+      "description": "Strawberry ribbons through sweet cream.",
+      "category": "Fruit",
+      "image": "/assets/products/strawberry-swirl.svg",
+      "available": true,
+      "featured": false,
+      "order": 5,
+      "pricePerUnit": 34,
+      "variants": [
+        "250ml",
+        "500ml"
+      ]
+    },
+    {
+      "id": "p-butter",
+      "name": "Butterscotch Crunch",
+      "description": "Buttery caramel with crunchy praline.",
+      "category": "Rich and creamy",
+      "image": "/assets/products/butterscotch-crunch.svg",
+      "available": true,
+      "featured": false,
+      "order": 6,
+      "pricePerUnit": 38,
+      "variants": [
+        "250ml",
+        "500ml",
+        "1l"
+      ]
+    },
+    {
+      "id": "p-coconut",
+      "name": "Tender Coconut",
+      "description": "Fresh coconut cream with tender coconut pieces.",
+      "category": "Fruit",
+      "image": "/assets/products/tender-coconut.svg",
+      "available": true,
+      "featured": false,
+      "order": 7,
+      "pricePerUnit": 36,
+      "variants": [
+        "250ml",
+        "500ml",
+        "1l"
+      ]
+    },
+    {
+      "id": "p-coffee",
+      "name": "Filter Coffee",
+      "description": "Strong South Indian filter coffee, frozen.",
+      "category": "Indian classics",
+      "image": "/assets/products/filter-coffee.svg",
+      "available": true,
+      "featured": false,
+      "order": 8,
+      "pricePerUnit": 40,
+      "variants": [
+        "500ml",
+        "1l"
+      ]
+    }
+  ],
+  "memories": [
+    {
+      "id": "m-sunday",
+      "title": "Sunday scoops",
+      "description": "Slow afternoons are best with something cold in hand.",
+      "image": "/assets/memories/sunday-scoops.svg",
+      "order": 1
+    },
+    {
+      "id": "m-sprinkle",
+      "title": "Sprinkle season",
+      "description": "Some flavours are just meant for celebrating.",
+      "image": "/assets/memories/sprinkle-season.svg",
+      "order": 2
+    },
+    {
+      "id": "m-recipe",
+      "title": "The recipe notebook",
+      "description": "Every flavour starts as a note, a taste and a few tries.",
+      "image": "/assets/memories/family-recipe-book.svg",
+      "order": 3
+    },
+    {
+      "id": "m-ready",
+      "title": "Ready for you",
+      "description": "Cups lined up and waiting for your order.",
+      "image": "/assets/memories/ready-for-you.svg",
+      "order": 4
+    }
+  ],
+  "offers": [
+    {
+      "id": "o-weekend",
+      "title": "Weekend Special",
+      "discount": "10% off",
+      "description": "Order any 500ml or 1L tub this weekend and get 10% off. Just mention the code below.",
+      "code": "WEEKEND10",
+      "image": "",
+      "startDate": "",
+      "endDate": "",
+      "active": true,
+      "order": 1
+    }
+  ],
+  "analytics": {
+    "days": {},
+    "products": {}
+  }
+}

@@ -1,0 +1,15 @@
+services:
+  minchu:
+    build: .
+    ports:
+      - "8080:8080"
+    env_file: .env          # admin login and session secret
+    environment:
+      PORT: "8080"
+      DATA_DIR: /app/data/store
+    volumes:
+      - minchu-data:/app/data/store   # keeps products, memories, settings and uploaded images
+    restart: unless-stopped
+
+volumes:
+  minchu-data:

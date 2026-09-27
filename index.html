@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Loading…</title>
+  <meta name="description" content="">
+  <meta name="theme-color" content="#e0a94a">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Figtree:wght@400;500;600;700&display=swap">
+  <link rel="preload" href="/api/content" as="fetch" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/sections.css">
+  <script type="module" src="/js/site.js"></script>
+</head>
+<body>
+  <div class="boot" id="boot" role="status">
+    <div class="boot__scoop" aria-hidden="true"></div>
+    <p class="boot__message" id="bootMessage">Scooping up the page…</p>
+    <button class="btn btn--ink" id="bootRetry" type="button">Try again</button>
+    <noscript><p class="boot__message">This site needs JavaScript to show the menu.</p></noscript>
+  </div>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <a class="brand" href="#hero" aria-label="Back to the top">
+      <svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+        <path d="M20 33h24L32 58z" fill="#d9a066" stroke="#2b1c14" stroke-width="4" stroke-linejoin="round"/>
+        <circle cx="32" cy="25" r="15" fill="#d98f8a" stroke="#2b1c14" stroke-width="4"/>
+      </svg>
+      <span data-brand></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#offers" data-nav="offers">Offers</a>
+      <a href="#story">Story</a>
+      <a href="#featured" data-nav="featured">Featured</a>
+      <a href="#menu" data-nav="menu">Menu</a>
+      <a href="#memories" data-nav="memories">Memories</a>
+      <a href="#order" data-nav="order">Order</a>
+      <a href="#contact" data-nav="contact">Contact</a>
+    </nav>
+    <button class="btn btn--ink btn--sm topbar__order" id="navOrder" type="button">Order now</button>
+    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main id="main">
+    <!-- Hero / chef introduction -->
+    <section class="s s-hero" id="hero" aria-labelledby="heroTitle">
+      <div class="wrap hero">
+        <div class="hero__copy">
+          <h1 class="hero__title" id="heroTitle" data-in="1" data-bind="hero.title"></h1>
+          <p class="hero__sub" data-in="2" data-bind="hero.subtitle"></p>
+          <p class="hero__desc" data-in="3" data-bind="hero.description"></p>
+          <div class="hero__ctas" id="heroCtas" data-in="4"></div>
+        </div>
+
+        <div class="chef" id="chef" data-in="2">
+          <span class="sprinkle sprinkle--a" data-speed="0.10" aria-hidden="true"></span>
+          <span class="sprinkle sprinkle--b" data-speed="-0.08" aria-hidden="true"></span>
+          <span class="sprinkle sprinkle--c" data-speed="0.14" aria-hidden="true"></span>
+          <span class="sprinkle sprinkle--d" data-speed="-0.12" aria-hidden="true"></span>
+          <span class="sprinkle sprinkle--e" data-speed="0.07" aria-hidden="true"></span>
+
+          <svg class="chef__svg" id="chefArt" viewBox="0 0 500 560" role="img" aria-label="The chef, holding an ice cream cone and waving">
+            <ellipse cx="250" cy="536" rx="160" ry="13" fill="#2b1c14" opacity=".18"/>
+
+            <!-- coat and apron -->
+            <path d="M118 540c-10-110 10-180 72-206h120c62 26 82 96 72 206z" fill="#fff" stroke="#2b1c14" stroke-width="6" stroke-linejoin="round"/>
+            <path d="M176 398q74-24 148 0l16 142H160z" fill="#d98f8a" stroke="#2b1c14" stroke-width="6" stroke-linejoin="round"/>
+            <rect x="208" y="466" width="84" height="50" rx="10" fill="#eccac4" stroke="#2b1c14" stroke-width="5"/>
+            <circle cx="250" cy="356" r="7" fill="#2b1c14"/><circle cx="250" cy="380" r="7" fill="#2b1c14"/>
+
+            <!-- ice cream arm (left) -->
+            <g class="chef__scoops">
+              <path d="M58 226h64l-32 96z" fill="#d9a066" stroke="#2b1c14" stroke-width="6" stroke-linejoin="round"/>
+              <path d="M70 236l40 40M100 232l-30 30M112 240l-40 44" stroke="#a97a45" stroke-width="4" stroke-linecap="round" opacity=".8"/>
+              <path d="M52 232c-14-38 6-74 40-74s54 36 40 74c-10 12-20-2-30 8s-22-6-30 4-16-2-20-12z" fill="#e2924f" stroke="#2b1c14" stroke-width="6" stroke-linejoin="round"/>
+              <path d="M62 190c8-26 32-40 58-30-24 4-40 20-46 40z" fill="#fff" opacity=".4"/>
+              <path d="M62 176c-6-34 16-58 44-58s50 24 44 58c-8 8-16-2-24 6s-16-4-22 4-16-2-20-8-14 4-22-2z" fill="#a8c39a" stroke="#2b1c14" stroke-width="6" stroke-linejoin="round" transform="translate(-16 -6) scale(.9)"/>
+              <circle cx="88" cy="108" r="13" fill="#c14a3d" stroke="#2b1c14" stroke-width="5"/>
+            </g>
+            <path d="M138 392c-46-6-66-38-56-88" fill="none" stroke="#2b1c14" stroke-width="54" stroke-linecap="round"/>
+            <path d="M138 392c-46-6-66-38-56-88" fill="none" stroke="#fff" stroke-width="42" stroke-linecap="round"/>
+            <circle cx="90" cy="306" r="23" fill="#e7a77b" stroke="#2b1c14" stroke-width="6"/>
+
+            <!-- waving arm (right) -->
+            <g class="chef__wave">
+              <path d="M362 392c46-6 66-38 56-92" fill="none" stroke="#2b1c14" stroke-width="54" stroke-linecap="round"/>
+              <path d="M362 392c46-6 66-38 56-92" fill="none" stroke="#fff" stroke-width="42" stroke-linecap="round"/>
+              <circle cx="416" cy="290" r="24" fill="#e7a77b" stroke="#2b1c14" stroke-width="6"/>
+            </g>
+
+            <!-- neck and head -->
+            <rect x="228" y="296" width="44" height="50" rx="10" fill="#d99569" stroke="#2b1c14" stroke-width="6"/>
+            <circle cx="172" cy="254" r="15" fill="#e7a77b" stroke="#2b1c14" stroke-width="6"/>
+            <circle cx="328" cy="254" r="15" fill="#e7a77b" stroke="#2b1c14" stroke-width="6"/>
+            <ellipse cx="250" cy="248" rx="80" ry="84" fill="#e7a77b" stroke="#2b1c14" stroke-width="6"/>
+            <path d="M170 236c-4-56 38-86 80-86s84 30 80 86c-14-30-40-44-80-44s-66 14-80 44z" fill="#2b1c14"/>
+
+            <!-- chef hat -->
+            <path d="M184 166v-24c-36-6-46-52-8-70 8-32 60-42 74-22 20-20 70-10 76 22 38 18 28 64-8 70v24z" fill="#fff" stroke="#2b1c14" stroke-width="6" stroke-linejoin="round"/>
+            <path d="M186 146h128" stroke="#2b1c14" stroke-width="4" stroke-linecap="round"/>
+
+            <!-- face -->
+            <g class="chef__eyes">
+              <ellipse class="chef__eye" cx="220" cy="252" rx="8" ry="11" fill="#2b1c14"/>
+              <ellipse class="chef__eye" cx="280" cy="252" rx="8" ry="11" fill="#2b1c14"/>
+            </g>
+            <circle cx="223" cy="248" r="3" fill="#fff"/><circle cx="283" cy="248" r="3" fill="#fff"/>
+            <path d="M206 228q14-9 28-2M266 226q14-7 28 2" fill="none" stroke="#2b1c14" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="196" cy="282" r="13" fill="#d98f8a" opacity=".6"/><circle cx="304" cy="282" r="13" fill="#d98f8a" opacity=".6"/>
+            <path d="M224 282q26 34 52 0z" fill="#8a4a3a" stroke="#2b1c14" stroke-width="5" stroke-linejoin="round"/>
+            <path d="M238 296q12 8 24 0-4-8-12-8t-12 8z" fill="#d98f8a"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Offers -->
+    <section class="s s-offers" id="offers" aria-labelledby="offersHeading">
+      <div class="wrap">
+        <h2 class="sr-only" id="offersHeading">Current offers</h2>
+        <ul class="offers" id="offersList"></ul>
+      </div>
+    </section>
+
+    <!-- Story -->
+    <section class="s s-story" id="story" aria-labelledby="storyTitle">
+      <div class="wrap story">
+        <div class="story__art" data-speed="0.06" aria-hidden="true">
+          <svg viewBox="0 0 320 420" focusable="false">
+            <path d="M70 200h180l-90 200z" fill="#d9a066" stroke="#2b1c14" stroke-width="7" stroke-linejoin="round"/>
+            <clipPath id="storyCone"><path d="M70 200h180l-90 200z"/></clipPath>
+            <g clip-path="url(#storyCone)" stroke="#a97a45" stroke-width="5" stroke-linecap="round" opacity=".8"><path d="M96 210l100 170M150 204l-56 96M206 204l40 70M110 204l120 150M120 200l70 180M200 200l-70 150M240 200l-90 180M90 240l80 130"/></g>
+            <path d="M52 200c-16-60 20-110 108-110s124 50 108 110c-14 16-26-4-42 8s-30-8-46 6-30-6-42 4-26-8-46-8z" fill="#fff" stroke="#2b1c14" stroke-width="7" stroke-linejoin="round"/>
+            <path d="M72 168c4-40 34-60 66-60" fill="none" stroke="#e0a94a" stroke-width="12" stroke-linecap="round"/>
+            <path d="M92 60c-20-40 16-72 68-72s88 32 68 72c-16 12-28-2-44 8s-28-6-44 4-32-4-48-12z" transform="translate(0 46)" fill="#d98f8a" stroke="#2b1c14" stroke-width="7" stroke-linejoin="round"/>
+            <circle cx="160" cy="34" r="20" fill="#c14a3d" stroke="#2b1c14" stroke-width="6"/>
+          </svg>
+        </div>
+        <div class="story__text">
+          <h2 class="h2" id="storyTitle" data-reveal data-bind="about.title"></h2>
+          <div class="story__body" id="storyBody" data-reveal></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured -->
+    <section class="s s-featured" id="featured" aria-labelledby="featuredTitle">
+      <div class="wrap">
+        <header class="section-head">
+          <h2 class="h2" id="featuredTitle" data-reveal data-bind="sections.featuredTitle"></h2>
+          <p class="section-head__sub" data-reveal data-bind="sections.featuredSubtitle"></p>
+        </header>
+        <ul class="grid grid--feature" id="featuredList"></ul>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="s s-menu" id="menu" aria-labelledby="menuTitle">
+      <div class="wrap">
+        <header class="section-head">
+          <h2 class="h2" id="menuTitle" data-reveal data-bind="sections.menuTitle"></h2>
+          <p class="section-head__sub" data-reveal data-bind="sections.menuSubtitle"></p>
+        </header>
+        <div class="chips" id="menuChips" role="group" aria-label="Filter by category"></div>
+        <ul class="grid" id="menuList"></ul>
+        <p class="empty" id="menuEmpty" hidden>The menu is being updated. Please check back soon.</p>
+      </div>
+    </section>
+
+    <!-- Memories -->
+    <section class="s s-memories" id="memories" aria-labelledby="memoriesTitle">
+      <div class="wrap">
+        <header class="section-head">
+          <h2 class="h2" id="memoriesTitle" data-reveal data-bind="sections.memoriesTitle"></h2>
+          <p class="section-head__sub" data-reveal data-bind="sections.memoriesSubtitle"></p>
+        </header>
+        <ul class="masonry" id="memoriesList"></ul>
+      </div>
+    </section>
+
+    <!-- Why choose us -->
+    <section class="s s-why" id="why" aria-labelledby="whyTitle">
+      <div class="wrap">
+        <header class="section-head">
+          <h2 class="h2" id="whyTitle" data-reveal data-bind="why.title"></h2>
+        </header>
+        <ul class="why" id="whyList"></ul>
+      </div>
+    </section>
+
+    <!-- Ordering -->
+    <section class="s s-order" id="order" aria-labelledby="orderTitle">
+      <div class="wrap order">
+        <header class="section-head section-head--center">
+          <h2 class="h2" id="orderTitle" data-reveal data-bind="sections.orderTitle"></h2>
+          <p class="section-head__sub" data-reveal data-bind="sections.orderSubtitle"></p>
+        </header>
+        <ol class="steps" id="orderSteps"></ol>
+        <div class="order__buttons" id="orderButtons"></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="s s-contact" id="contact" aria-labelledby="contactTitle">
+      <div class="wrap">
+        <header class="section-head">
+          <h2 class="h2" id="contactTitle" data-reveal data-bind="sections.contactTitle"></h2>
+          <p class="section-head__sub" data-reveal data-bind="sections.contactSubtitle"></p>
+        </header>
+        <ul class="contact" id="contactList"></ul>
+        <div class="pills" id="contactSocial" aria-label="Social media"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="s footer" id="footer">
+    <div class="wrap footer__inner">
+      <p class="footer__brand" data-brand></p>
+      <p class="footer__tagline" data-bind="footer.tagline"></p>
+      <nav class="footer__social" id="footerSocial" aria-label="Social media"></nav>
+      <p class="footer__note"><span data-bind="footer.note"></span> <span id="footerCopy"></span></p>
+    </div>
+  </footer>
+
+  <dialog class="dialog" id="orderDialog"></dialog>
+</body>
+</html>
